@@ -17,6 +17,8 @@ body {
   overflow: hidden;
   background: $grey url("../img/hamburger.svg") no-repeat 50% 50%;
   background-size: 30px;
+  position: relative;
+  z-index: 10;
 }
 nav {
   display: block;
@@ -62,26 +64,51 @@ section.about {
   width: 100%;
   position: relative;
 
-  div.hero h1 {
+  div.hero {
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  h1 {
     display: inline-block;
     width: 98%;
     text-align: center;
-    margin-top: 0;
+    margin-top: 13px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 34px;
     font-family: $titlefont;
     color: $pink;
     text-transform: uppercase;
     font-weight: 700;
-    line-height: 50px;
+    line-height: 115px;
+    text-indent: -9999px;
   }
-  div.hero h2 {
+  h2 {
   font-family: 'Amatic SC';
   text-align: center;
   font-size: 30px;
   color: $white;
+  text-indent: -9999px;
   }
+}
+}
+@media screen and (max-width: 769px) {
+      #tom {
+      font-size: 160px;
+      display: block;
+      line-height: 80px;
+    }
+    #rich {
+      font-size: 47px;
+      margin-left: 18px;
+      display: block;
+      margin-top: -12px;
+    }
+    section.about div.hero h2 {
+  display: none;
+}
 }
 @media screen and (min-width: 769px) {
   .header {
@@ -128,12 +155,17 @@ transition: all 0.4s ease;
     }
   }
 }
+section.about div.hero img {
+  display: none;
+}
 section.about div.hero h1 {
   font-size: 100px;
-  margin-top: 40px;
+  margin-top: 25px;
+  text-indent: 0;
 }
 section.about div.hero h2 {
   font-size: 40px;
   margin-top: 15px;
+  text-indent: 0;
 }
 }

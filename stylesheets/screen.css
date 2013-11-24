@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -91,18 +91,20 @@ body {
   overflow: hidden;
   background: #363635 url("../img/hamburger.svg") no-repeat 50% 50%;
   background-size: 30px;
+  position: relative;
+  z-index: 10;
 }
 
-/* line 21, ../sass/styles.scss */
+/* line 23, ../sass/styles.scss */
 nav {
   display: block;
 }
-/* line 24, ../sass/styles.scss */
+/* line 26, ../sass/styles.scss */
 nav ul {
   list-style: none;
   text-align: left;
 }
-/* line 28, ../sass/styles.scss */
+/* line 30, ../sass/styles.scss */
 nav ul li {
   display: block;
   height: 40px;
@@ -111,7 +113,7 @@ nav ul li {
   border-bottom: 1px solid #363635;
   position: relative;
 }
-/* line 36, ../sass/styles.scss */
+/* line 38, ../sass/styles.scss */
 nav ul li a {
   text-decoration: none;
   text-transform: uppercase;
@@ -123,7 +125,7 @@ nav ul li a {
   letter-spacing: 0.05em;
 }
 
-/* line 49, ../sass/styles.scss */
+/* line 51, ../sass/styles.scss */
 #scrollUp {
   display: inline-block;
   bottom: 20px;
@@ -136,41 +138,68 @@ nav ul li a {
   opacity: 0.6;
 }
 
-/* line 58, ../sass/styles.scss */
+/* line 60, ../sass/styles.scss */
 #scrollUp:hover {
   opacity: 1;
 }
 
-/* line 61, ../sass/styles.scss */
+/* line 63, ../sass/styles.scss */
 section.about {
   width: 100%;
   position: relative;
 }
-/* line 65, ../sass/styles.scss */
+/* line 69, ../sass/styles.scss */
+section.about div.hero img {
+  max-width: 100%;
+  height: auto;
+}
+/* line 74, ../sass/styles.scss */
 section.about div.hero h1 {
   display: inline-block;
   width: 98%;
   text-align: center;
-  margin-top: 0;
+  margin-top: 13px;
   margin-left: auto;
   margin-right: auto;
-  font-size: 34px;
   font-family: "Roboto Condensed" sans-serif;
   color: #f15d58;
   text-transform: uppercase;
   font-weight: 700;
-  line-height: 50px;
+  line-height: 115px;
+  text-indent: -9999px;
 }
-/* line 79, ../sass/styles.scss */
+/* line 88, ../sass/styles.scss */
 section.about div.hero h2 {
   font-family: 'Amatic SC';
   text-align: center;
   font-size: 30px;
   color: #dcddcd;
+  text-indent: -9999px;
 }
 
+@media screen and (max-width: 769px) {
+  /* line 98, ../sass/styles.scss */
+  #tom {
+    font-size: 160px;
+    display: block;
+    line-height: 80px;
+  }
+
+  /* line 103, ../sass/styles.scss */
+  #rich {
+    font-size: 47px;
+    margin-left: 18px;
+    display: block;
+    margin-top: -12px;
+  }
+
+  /* line 109, ../sass/styles.scss */
+  section.about div.hero h2 {
+    display: none;
+  }
+}
 @media screen and (min-width: 769px) {
-  /* line 87, ../sass/styles.scss */
+  /* line 114, ../sass/styles.scss */
   .header {
     display: block;
     position: relative;
@@ -181,18 +210,18 @@ section.about div.hero h2 {
     background: #f15d58;
   }
 
-  /* line 97, ../sass/styles.scss */
+  /* line 124, ../sass/styles.scss */
   nav {
     width: 100%;
     margin: 0 auto;
     max-width: 1200px;
   }
-  /* line 101, ../sass/styles.scss */
+  /* line 128, ../sass/styles.scss */
   nav ul {
     text-align: center;
     width: 80%;
   }
-  /* line 104, ../sass/styles.scss */
+  /* line 131, ../sass/styles.scss */
   nav ul li {
     display: inline-block;
     height: 60px;
@@ -200,7 +229,7 @@ section.about div.hero h2 {
     background-color: #363635;
     margin: 0 15px;
   }
-  /* line 110, ../sass/styles.scss */
+  /* line 137, ../sass/styles.scss */
   nav ul li a {
     color: #dcddcd;
     position: relative;
@@ -211,26 +240,33 @@ section.about div.hero h2 {
     -ms-transition: all 0.4s ease;
     transition: all 0.4s ease;
   }
-  /* line 120, ../sass/styles.scss */
+  /* line 147, ../sass/styles.scss */
   nav ul li a.active {
     color: #272727;
     background-color: #f15d58;
   }
-  /* line 124, ../sass/styles.scss */
+  /* line 151, ../sass/styles.scss */
   nav ul li a:hover {
     color: #747272;
     background-color: #534444;
   }
 
-  /* line 131, ../sass/styles.scss */
-  section.about div.hero h1 {
-    font-size: 100px;
-    margin-top: 40px;
+  /* line 158, ../sass/styles.scss */
+  section.about div.hero img {
+    display: none;
   }
 
-  /* line 135, ../sass/styles.scss */
+  /* line 161, ../sass/styles.scss */
+  section.about div.hero h1 {
+    font-size: 100px;
+    margin-top: 25px;
+    text-indent: 0;
+  }
+
+  /* line 166, ../sass/styles.scss */
   section.about div.hero h2 {
     font-size: 40px;
     margin-top: 15px;
+    text-indent: 0;
   }
 }
