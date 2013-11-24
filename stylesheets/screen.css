@@ -1,0 +1,236 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../sass/styles.scss */
+body {
+  background: #363635;
+}
+
+/* line 4, ../sass/styles.scss */
+.header {
+  display: none;
+}
+
+/* line 7, ../sass/styles.scss */
+.nav-toggle {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 70px;
+  height: 55px;
+  text-indent: -9999px;
+  float: left;
+  overflow: hidden;
+  background: #363635 url("../img/hamburger.svg") no-repeat 50% 50%;
+  background-size: 30px;
+}
+
+/* line 21, ../sass/styles.scss */
+nav {
+  display: block;
+}
+/* line 24, ../sass/styles.scss */
+nav ul {
+  list-style: none;
+  text-align: left;
+}
+/* line 28, ../sass/styles.scss */
+nav ul li {
+  display: block;
+  height: 40px;
+  padding: 10px 15px;
+  background-color: #f15d58;
+  border-bottom: 1px solid #363635;
+  position: relative;
+}
+/* line 36, ../sass/styles.scss */
+nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed" sans-serif;
+  font-size: 23px;
+  color: #272727;
+  position: absolute;
+  top: 20px;
+  letter-spacing: 0.05em;
+}
+
+/* line 49, ../sass/styles.scss */
+#scrollUp {
+  display: inline-block;
+  bottom: 20px;
+  right: 20px;
+  height: 38px;
+  /* Height of image */
+  width: 38px;
+  /* Width of image */
+  background: url("../img/top.png") no-repeat;
+  opacity: 0.6;
+}
+
+/* line 58, ../sass/styles.scss */
+#scrollUp:hover {
+  opacity: 1;
+}
+
+/* line 61, ../sass/styles.scss */
+section.about {
+  width: 100%;
+  position: relative;
+}
+/* line 65, ../sass/styles.scss */
+section.about div.hero h1 {
+  display: inline-block;
+  width: 98%;
+  text-align: center;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 34px;
+  font-family: "Roboto Condensed" sans-serif;
+  color: #f15d58;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 50px;
+}
+/* line 79, ../sass/styles.scss */
+section.about div.hero h2 {
+  font-family: 'Amatic SC';
+  text-align: center;
+  font-size: 30px;
+  color: #dcddcd;
+}
+
+@media screen and (min-width: 769px) {
+  /* line 87, ../sass/styles.scss */
+  .header {
+    display: block;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 20px;
+    background: #f15d58;
+  }
+
+  /* line 97, ../sass/styles.scss */
+  nav {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  /* line 101, ../sass/styles.scss */
+  nav ul {
+    text-align: center;
+    width: 80%;
+  }
+  /* line 104, ../sass/styles.scss */
+  nav ul li {
+    display: inline-block;
+    height: 60px;
+    padding: 10px 0;
+    background-color: #363635;
+    margin: 0 15px;
+  }
+  /* line 110, ../sass/styles.scss */
+  nav ul li a {
+    color: #dcddcd;
+    position: relative;
+    padding: 45px 13px 15px 13px;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  /* line 120, ../sass/styles.scss */
+  nav ul li a.active {
+    color: #272727;
+    background-color: #f15d58;
+  }
+  /* line 124, ../sass/styles.scss */
+  nav ul li a:hover {
+    color: #747272;
+    background-color: #534444;
+  }
+
+  /* line 131, ../sass/styles.scss */
+  section.about div.hero h1 {
+    font-size: 100px;
+    margin-top: 40px;
+  }
+
+  /* line 135, ../sass/styles.scss */
+  section.about div.hero h2 {
+    font-size: 40px;
+    margin-top: 15px;
+  }
+}
